@@ -1,0 +1,326 @@
+/* common style started here  */
+ * 
+ {
+     padding: 0px;
+     margin: 0px;
+     box-sizing: border-box;
+ }
+ html 
+ {
+     scroll-behavior: smooth;
+ }
+ @font-face {
+     font-family: "font-bold";
+     src: url("../font/Poppins-Bold.ttf") format("ttf");
+ }
+ @font-face {
+     font-family: "font-light";
+     src: url("../font/Poppins-Light.ttf") format("ttf");
+ }
+ @font-face {
+     font-family: "font-semi-bold";
+     src: url("../font/Poppins-SemiBold.ttf") format("ttf");
+ }
+ a 
+ {
+     text-decoration: none;
+ }
+ li 
+ {
+     list-style: none;
+ }
+/* common style end here  */
+
+/* header section style started here  */
+.logo img
+{
+    width: 200px;
+}
+ .header-section 
+ {
+     background-color: #F0FFF0;
+ }
+ .nav-item a
+ {
+     color: black;
+     margin-left: 20px;
+     font-family: font-bold;
+     font-size: 20px;
+     transition: .3s;
+ }
+ .nav-item a:hover 
+ {
+     color:#21B573;
+ }
+ #sign-in 
+ {
+     border: 2px solid #21B573;
+     border-radius: 50px;
+     padding: 5px 20px;
+     background-color: #21B573;
+     color: white;
+     text-align: center;
+ }
+ #sign-in:hover 
+ {
+     background-color:white ;
+     color:#21B573;
+ }
+ .icon 
+ {
+     font-size: 30px;
+     border: 1px solid rgba(0, 0, 0, 0.356);
+     padding: 5px 10px;
+     border-radius: 5px;
+     color: rgba(0, 0, 0, 0.698);
+     outline: none;
+ }
+    /* banner section  */
+.banner 
+{
+    padding: 60px;
+}
+.banner-details h1 
+{
+    font-size: 60px;
+    font-family: font-bold;
+}
+.banner-details p
+{
+    max-width: 450px;
+    opacity: .8;
+}
+#get-btn 
+{
+    padding: 5px 18px ;
+    outline: none;
+    border: 2px solid #21B573;
+    border-radius: 50px;
+    background-color: #21B573;
+    font-size: 15px;
+    text-align: center;
+    color: white;
+    transition: .3s;
+}
+#get-btn:hover 
+{
+    background-color: white;
+    color: #21B573;
+}
+.banner-img 
+{
+    text-align: right;
+}
+.banner-img img 
+{
+   max-width: 500px;
+}
+/* header section style end here  */
+
+/* main section style started here  */
+     /* books student style here  */
+    .content img 
+    {
+        max-width: 80px;
+        height: 100px;
+    }
+    .content 
+    {
+
+        text-align: center;
+        padding: 60px 0px;
+        width: 100%;
+        background-color: #f0fff054;
+        border-radius: 10px;
+        transition: .3s;
+        cursor: pointer;
+    }
+    .content:hover
+    {
+        background-color: #ffffff;
+        box-shadow: 2px 2px 30px rgba(128, 128, 128, 0.356);
+    }
+    .content h1 
+    {
+        font-size: 25px;
+        margin-top: 15px;
+        font-family: font-bold;
+    }
+    .items 
+    {
+        padding: 0px 70px;
+    }
+    /* course style here  */
+    .psychology 
+    {
+        background-color: #FFFFFF;
+        box-shadow: 2px 2px 15px rgba(128, 128, 128, 0.246);
+        border-radius: 8px;
+        padding: 20px;
+        width: 100%;
+        margin: 0px auto;
+      
+    }
+    .psychology img 
+    {
+        width: 100%;
+    }
+    .psychology h1 
+    {
+        font-size: 28px;
+        margin-top: 20px;
+        font-family: font-bold;
+    }
+    .date 
+    {
+        display: flex;
+        justify-content: space-between;
+    }
+    .date span,i 
+    {
+        font-family: font-lite;
+        opacity: .8;
+    }
+    .course-container
+    {
+        padding: 0px 70px;
+    }
+    /* testimonial style section here  */
+    .testi-img 
+    {
+        text-align: right;
+    }
+    .testi-img img
+    {
+        max-width: 150px;
+    }
+    .testi-details 
+    {
+        
+        padding: 30px 10px;
+    }
+    .testi-details p 
+    {
+        font-size: 20px;
+        max-width: 600px;
+        text-align: justify;
+    }
+    /* contact section style  */
+    .contact-form 
+    {
+        padding: 40px;
+        box-shadow: 2px 2px 25px rgba(128, 128, 128, 0.253);
+        width: 90%;
+        border-radius: 5px;
+        margin: 0px auto;
+    }
+    .contact-form button 
+    {
+        padding: 5px 25px;
+        border: 2px solid #21B573;
+        background-color: #21b572;
+        font-size: 20px;
+        color: white;
+        border-radius: 3px;
+        transition: .3s;
+        margin-top: 10px;
+    }
+    .contact-form button:hover 
+    {
+      background-color: white;
+      color: #21b572;
+    }
+    .user 
+    {
+        margin: 20px 0px;
+    }
+    .user i 
+    {
+        background-color: #21B573;
+        color: white;
+        font-size: 20px;
+        padding: 7px 7px 8px 7px;
+        margin-right: -6px;
+    }
+    .user input 
+    {
+        width: 90%;
+        height: 35px;
+        padding: 10px;
+        border: 1px solid #21b57288;
+        outline: none;
+        border-radius: 0px 3px 0px 0px;
+    }
+    .user input:focus
+    {
+        border: 1px solid #21b572;
+    }
+    #area 
+    {
+        width: 97%;
+        height: 150px;
+        border: 1px solid #0000003a;
+        padding: 10px;
+        transition: .3s;
+        outline: none;
+
+    }
+    #area:focus 
+    {
+        border: 1px solid rgb(8, 153, 117);
+    }
+    #area::placeholder
+    {
+        font-size: 20px;
+    }
+   .contact-img img 
+   {
+       width: 100%;
+   }
+/* main section end here  */
+/* responsive design started here */
+@media screen and (max-width:990px)
+ {
+    .banner-img 
+    {
+        margin-top: 30px;
+        text-align: left;
+    }
+    .banner-img img
+    {
+        width: 300px;
+    }
+   .banner-details 
+   {
+       
+   }
+   .banner-details h1 
+   {
+       font-size: 30px;
+   }
+   .psychology 
+   {
+       margin-top: 10px;
+   }
+   .testi-img  
+   {
+       text-align: center;
+       margin-top: 20px;
+   }
+   .contact-img img 
+   {
+     margin-top: 10px;
+   }
+}
+@media screen and (max-width:388px) 
+{
+    .logo img 
+    {
+        width: 150px;
+    }
+    .icon 
+    {
+        font-size: 20px;
+    }
+}
+/* responsive design end here */
