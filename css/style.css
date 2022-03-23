@@ -34,7 +34,7 @@
 /* header section style started here  */
 .logo img
 {
-    width: 200px;
+    max-width: 200px;
 }
  .header-section 
  {
@@ -69,11 +69,8 @@
  .icon 
  {
      font-size: 30px;
-     border: 1px solid rgba(0, 0, 0, 0.356);
-     padding: 5px 10px;
-     border-radius: 5px;
      color: rgba(0, 0, 0, 0.698);
-     outline: none;
+
  }
     /* banner section  */
 .banner 
@@ -113,7 +110,7 @@
 }
 .banner-img img 
 {
-   max-width: 500px;
+   max-width: 400px;
 }
 /* header section style end here  */
 
@@ -233,28 +230,35 @@
     .user 
     {
         margin: 20px 0px;
+        position: relative;
     }
-    .user i 
-    {
-        background-color: #21B573;
-        color: white;
-        font-size: 20px;
-        padding: 7px 7px 8px 7px;
-        margin-right: -6px;
-    }
-    .user input 
+ 
+    .user-input 
     {
         width: 90%;
-        height: 35px;
-        padding: 10px;
-        border: 1px solid #21b57288;
-        outline: none;
-        border-radius: 0px 3px 0px 0px;
-    }
-    .user input:focus
-    {
+        height: 30px;
+        padding: 5px 10px;
+        position: absolute;
         border: 1px solid #21b572;
+        outline: none;
+
+        transition: .3s;
+        border-radius: 2px;
     }
+    .user-input:focus 
+    {
+        border: 1px solid rgb(65, 225, 126);
+    }
+    .user-icon 
+    {
+        background-color: #21b572;
+        height: 30px;
+        width: 30px;
+        text-align: center;
+        padding: 5px;
+        color: white;
+    }   
+      
     #area 
     {
         width: 97%;
@@ -278,9 +282,63 @@
        width: 100%;
    }
 /* main section end here  */
+/* footer section started here  */
+.footer-section 
+{
+    background-color:#282531;
+    padding: 40px;
+}
+.info p 
+{
+    color: white;
+    font-family: font-lite;
+    font-size: 20px;
+}
+.course-terms-links 
+{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+.course-list a 
+{
+    color: white;
+    font-size: 18px;
+    transition: .3s;
+
+}
+.course-list a:hover 
+{
+    color: #21b572;
+}
+.title 
+{
+    font-size: 20px;
+    font-family: font-bold;
+    color: white;
+    font-weight: 900px;
+    background-color: #21b572;
+    text-align: center;
+    border-radius: 5px;
+    padding: 2px 10px;
+    margin-bottom: 10px;
+}
+.copy-right-clam 
+{
+    color: white;
+    text-align: center;
+    margin-top: 50px;
+    opacity: .5;
+}
+/* footer section end here  */
 /* responsive design started here */
 @media screen and (max-width:990px)
  {
+     .items 
+     {
+         padding: 0px;
+     }
     .banner-img 
     {
         margin-top: 30px;
@@ -301,6 +359,7 @@
    .psychology 
    {
        margin-top: 10px;
+      
    }
    .testi-img  
    {
@@ -310,6 +369,15 @@
    .contact-img img 
    {
      margin-top: 10px;
+   }
+  .course-list li a 
+  {
+        font-size: 16px;
+  }
+   .course-container
+   {
+       padding: 0px;
+    
    }
 }
 @media screen and (max-width:388px) 
